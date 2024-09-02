@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid task-1</title>
+    <link rel="shortcut icon" href="./CSS-GRID-3.png" type="image/x-icon">
+</head>
+<style>
+    .container{
+        height: 90vh;
+        background-color:black;
+        display: grid;
+        grid-template-columns: repeat(4,15vw);
+        grid-template-rows: repeat(3,15vh);
+        gap: 1.3vw;
+        place-content: center;
+    }
+    .item1{
+        background-color:rgb(20, 219, 20);
+        grid-row: 1/4;
+    }
+    .item2{
+        background-color: rgb(24, 230, 24);
+        grid-column: 2/4;
+    }
+    .item3,.item5{
+        background-color: red;
+    }
+    .item4{
+        background-color: orange;   
+    }
+    .item6{
+        background-color: red;
+        grid-row:3/4 ;
+    }
+    .item7{
+        background-color: orange;
+        grid-row: 3/4;
+    }
+    .item8{
+        background-color: rgb(33, 232, 33);
+        grid-row: 2/4;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+        <div class="item8"></div>
+        
+    </div>
+</body>
+</html>
